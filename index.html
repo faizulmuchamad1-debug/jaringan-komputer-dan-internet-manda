@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Jaringan Komputer & Internet</title>
+    <!-- Memuat Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1E40AF', // Biru gelap
+                        'secondary': '#3B82F6', // Biru terang
+                        'accent': '#F59E0B', // Kuning/Oranye
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Mengatur scroll halus untuk navigasi */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-primary">NET.ID</h1>
+            <nav class="hidden md:block space-x-4">
+                <a href="#definisi" class="text-gray-600 hover:text-secondary transition duration-150">Definisi</a>
+                <a href="#komponen" class="text-gray-600 hover:text-secondary transition duration-150">Komponen</a>
+                <a href="#jenis" class="text-gray-600 hover:text-secondary transition duration-150">Jenis Jaringan</a>
+                <a href="#protokol" class="text-gray-600 hover:text-secondary transition duration-150">Protokol</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto p-4 sm:p-8">
+
+        <!-- Bagian Selamat Datang -->
+        <section class="bg-secondary text-white p-8 md:p-12 rounded-xl shadow-2xl mb-12">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Materi Dasar Jaringan Komputer & Internet</h2>
+            <p class="text-lg opacity-90">Pelajari konsep-konsep inti, komponen, dan cara kerja jaringan yang menghubungkan dunia digital kita.</p>
+        </section>
+
+        <!-- Bagian 1: Definisi (Definisi Jaringan Komputer & Internet) -->
+        <section id="definisi" class="mb-12">
+            <h3 class="text-2xl font-bold text-primary mb-6 border-b-2 border-accent pb-2">1. Definisi Dasar</h3>
+
+            <div class="space-y-6">
+                <!-- Definisi Jaringan Komputer -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition hover:shadow-lg">
+                    <h4 class="text-xl font-semibold text-secondary mb-2">Jaringan Komputer [attachment_0](attachment)</h4>
+                    <p>Jaringan komputer adalah sekumpulan dua atau lebih perangkat komputer yang saling terhubung satu sama lain untuk berbagi sumber daya (data, printer, dll.) dan komunikasi.</p>
+                    <p class="mt-2 text-sm text-gray-500">Tujuan utamanya adalah efisiensi, pertukaran informasi, dan akses data terpusat.</p>
+                </div>
+
+                <!-- Definisi Internet -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition hover:shadow-lg">
+                    <h4 class="text-xl font-semibold text-secondary mb-2">Internet</h4>
+                    <p>Internet (Interconnected Network) adalah sistem jaringan komputer global yang saling terhubung menggunakan standar protokol komunikasi TCP/IP (Transmission Control Protocol/Internet Protocol).</p>
+                    <p class="mt-2 text-sm text-gray-500">Internet merupakan jaringan terbesar yang mencakup seluruh dunia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 2: Komponen Utama Jaringan -->
+        <section id="komponen" class="mb-12">
+            <h3 class="text-2xl font-bold text-primary mb-6 border-b-2 border-accent pb-2">2. Komponen Utama Jaringan</h3>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Perangkat Keras -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition hover:shadow-lg border-l-4 border-accent">
+                    <h4 class="text-xl font-semibold text-primary mb-3">Perangkat Keras (Hardware)</h4>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li>**Server:** Komputer yang menyediakan layanan dan sumber daya.</li>
+                        <li>**Client/Workstation:** Komputer yang mengakses layanan dari server.</li>
+                        <li>**Router:** Perangkat yang menghubungkan dua atau lebih jaringan dan menentukan jalur terbaik.</li>
+                        <li>**Switch/Hub:** Perangkat penghubung untuk beberapa komputer dalam jaringan lokal.</li>
+                        <li>**Kabel Jaringan:** Media transmisi (misalnya UTP, Fiber Optic) atau nirkabel (Wi-Fi).</li>
+                    </ul>
+                </div>
+                <!-- Perangkat Lunak -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition hover:shadow-lg border-l-4 border-accent">
+                    <h4 class="text-xl font-semibold text-primary mb-3">Perangkat Lunak (Software)</h4>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li>**Sistem Operasi Jaringan:** (Contoh: Windows Server, Linux)</li>
+                        <li>**Protokol:** Aturan komunikasi baku (Contoh: TCP/IP, HTTP).</li>
+                        <li>**Network Interface Card (NIC) Driver:** Perangkat lunak yang memungkinkan kartu jaringan berkomunikasi dengan OS.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 3: Jenis-Jenis Jaringan -->
+        <section id="jenis" class="mb-12">
+            <h3 class="text-2xl font-bold text-primary mb-6 border-b-2 border-accent pb-2">3. Jenis-Jenis Jaringan Berdasarkan Area</h3>
+
+            <div class="space-y-6">
+                <!-- LAN -->
+                <article class="bg-white p-6 rounded-xl shadow-md border-b-4 border-secondary">
+                    <h4 class="text-xl font-semibold text-secondary mb-2">LAN (Local Area Network)</h4>
+                    <p>Menghubungkan perangkat dalam area geografis kecil, seperti rumah, kantor, atau sekolah. Kecepatan tinggi dan biaya relatif rendah.</p>
+                </article>
+
+                <!-- MAN -->
+                <article class="bg-white p-6 rounded-xl shadow-md border-b-4 border-secondary">
+                    <h4 class="text-xl font-semibold text-secondary mb-2">MAN (Metropolitan Area Network)</h4>
+                    <p>Jaringan yang lebih besar dari LAN, mencakup area seluas kota atau wilayah metropolitan. Biasanya digunakan untuk menghubungkan kantor-kantor cabang dalam satu kota.</p>
+                </article>
+
+                <!-- WAN -->
+                <article class="bg-white p-6 rounded-xl shadow-md border-b-4 border-secondary">
+                    <h4 class="text-xl font-semibold text-secondary mb-2">WAN (Wide Area Network) [attachment_1](attachment)</h4>
+                    <p>Jaringan yang mencakup area geografis yang sangat luas, seperti negara atau benua. Internet adalah contoh terbesar dari WAN.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Bagian 4: Protokol Internet (TCP/IP) -->
+        <section id="protokol" class="mb-12">
+            <h3 class="text-2xl font-bold text-primary mb-6 border-b-2 border-accent pb-2">4. Protokol Komunikasi: TCP/IP</h3>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <p class="mb-4">TCP/IP (Transmission Control Protocol/Internet Protocol) adalah serangkaian protokol komunikasi yang digunakan untuk menghubungkan perangkat jaringan dalam internet.</p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <h4 class="text-lg font-semibold text-secondary mb-2">TCP (Transmission Control Protocol)</h4>
+                        <p class="text-sm">Bertanggung jawab untuk memastikan data dikirim secara handal. TCP membagi data menjadi paket-paket kecil, mengirimkannya, dan memastikan semua paket tiba dan disusun kembali dengan benar di tujuan.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-secondary mb-2">IP (Internet Protocol)</h4>
+                        <p class="text-sm">Bertanggung jawab untuk pengalamatan dan perutean paket data antar jaringan. IP memberikan alamat unik (Alamat IP) pada setiap perangkat.</p>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-4 bg-gray-100 rounded-lg">
+                    <p class="text-sm font-medium text-primary">Konsep Penting:</p>
+                    <ul class="list-disc ml-5 text-sm space-y-1 mt-1">
+                        <li>**Alamat IP:** Identitas numerik unik yang diberikan kepada setiap perangkat yang terhubung ke jaringan.</li>
+                        <li>**Subnetting:** Proses membagi jaringan besar menjadi jaringan-jaringan kecil (subnet) yang lebih efisien.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white p-6 text-center mt-12">
+        <p class="text-sm">&copy; 2025 Materi Jaringan Sederhana. Dibuat dengan Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
